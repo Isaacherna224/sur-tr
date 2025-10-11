@@ -3,28 +3,32 @@ import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 
 const locations = [
   {
-    name: "Sucursal Centro Histórico",
-    address: "Calle 16 de Septiembre #45, Col. Centro, Cuauhtémoc, CDMX",
-    phone: "+52 55 1234 5678",
-    hours: "Lun - Vie: 9:00 - 18:00 | Sáb: 9:00 - 14:00",
-  },
-  {
-    name: "Sucursal Roma Norte",
-    address: "Av. Álvaro Obregón #128, Col. Roma Norte, Cuauhtémoc, CDMX",
-    phone: "+52 55 2345 6789",
-    hours: "Lun - Vie: 9:00 - 18:00 | Sáb: 9:00 - 14:00",
-  },
-  {
-    name: "Sucursal Polanco",
-    address: "Calle Horacio #502, Col. Polanco, Miguel Hidalgo, CDMX",
-    phone: "+52 55 3456 7890",
-    hours: "Lun - Vie: 9:00 - 18:00 | Sáb: 9:00 - 14:00",
-  },
-  {
     name: "Sucursal Coyoacán",
-    address: "Av. Miguel Ángel de Quevedo #234, Col. Del Carmen, Coyoacán, CDMX",
-    phone: "+52 55 4567 8901",
-    hours: "Lun - Vie: 9:00 - 18:00 | Sáb: 9:00 - 14:00",
+    address: "Calz. de las Bombas 14, Coapa, Parque Coyoacán, Coyoacán, 04899 Ciudad de México, CDMX",
+    phone: "+52 55 1288 0840, +52 55 4614 4773, +52 55 4390 4228",
+    hours: "Lun - Vie: 10:00 - 18:00 | Sáb: 9:00 - 15:00",
+    mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.398518145283!2d-99.1342643!3d19.3085059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce014a0b8ca8d9%3A0x346697637d46a8f!2sGVS%20gestor%C3%ADa%20y%20verificaciones%20del%20sur!5e0!3m2!1sen!2smx!4v1760140152780!5m2!1sen!2smx",
+  },
+  {
+    name: "Sucursal Coapa Coyoacán",
+    address: "Armada de Mexico, Coapa, Culhuacan CTM Zona X, Coyoacán, 04939 Ciudad de México, CDMX",
+    phone: "+52 55 1288 0840, +52 55 4614 4773, +52 55 4390 4228",
+    hours: "Lun - Vie: 10:00 - 18:00 | Sáb: 9:00 - 15:00",
+    mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.4054763326476!2d-99.1116764!3d19.3082037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce01b33458d417%3A0x4001bc16c0c9ff67!2sGVS%20gestor%C3%ADa%20y%20verificaciones%20del%20sur!5e0!3m2!1sen!2smx!4v1760142417493!5m2!1sen!2smx",
+  },
+  {
+    name: "Sucursal Cuajimalpa",
+    address: "Prol. 16 de Septiembre 271A, Contadero, Cuajimalpa de Morelos, 05230 Ciudad de México, CDMX",
+    phone: "+52 55 1288 0840, +52 55 4614 4773, +52 55 4390 4228",
+    hours: "Lun - Vie: 10:00 - 18:00 | Sáb: 9:00 - 15:00",
+    mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3764.4659027169378!2d-99.3040245!3d19.348969099999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d207306e51b035%3A0xb0227e11740f85b0!2sGVS!5e0!3m2!1sen!2smx!4v1760142446542!5m2!1sen!2smx",
+  },
+  {
+    name: "Sucursal Coapa Tlalpan",
+    address: "Canal de Miramontes 3629, Coapa, Villa Coapa, Tlalpan, 14390 Ciudad de México, CDMX",
+    phone: "+52 55 1288 0840, +52 55 4614 4773, +52 55 4390 4228",
+    hours: "Lun - Vie: 10:00 - 18:00 | Sáb: 9:00 - 15:00",
+    mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.7994467912167!2d-99.12605889999999!3d19.291085799999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce010f4fb81103%3A0xa3ddfca42784a9a7!2sGvs%20gestor%C3%ADa%20y%20verificaciones%20del%20sur!5e0!3m2!1sen!2smx!4v1760142473855!5m2!1sen!2smx",
   },
 ];
 
@@ -57,7 +61,7 @@ const LocationsSection = () => {
               <CardContent className="space-y-4">
                 <div className="aspect-video bg-muted rounded-lg overflow-hidden">
                   <iframe
-                    src={`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.5!2d-99.1332!3d19.4326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDI1JzU3LjQiTiA5OcKwMDcnNTkuNSJX!5e0!3m2!1sen!2smx!4v1234567890`}
+                    src={location.mapEmbedUrl}
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
@@ -97,7 +101,7 @@ const LocationsSection = () => {
             ¿Prefieres que te contactemos nosotros?
           </p>
           <a
-            href="https://wa.me/5215512345678?text=Hola, me gustaría información sobre sus sucursales"
+            href="https://wa.me/5512880840?text=Hola, me gustaría información sobre sus sucursales"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center px-8 py-4 bg-accent text-accent-foreground hover:bg-accent-glow rounded-lg font-semibold text-lg shadow-accent transition-all duration-300 hover:scale-105"

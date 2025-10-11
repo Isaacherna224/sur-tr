@@ -17,7 +17,7 @@ const Footer = () => {
             </p>
             <div className="flex gap-4">
               <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/GVSgestorias"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 bg-primary-foreground/10 hover:bg-primary-foreground/20 rounded-lg transition-colors"
@@ -26,7 +26,7 @@ const Footer = () => {
                 <Facebook className="h-5 w-5" />
               </a>
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/gvs.gestoriasyverificaciones/?hl=en"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 bg-primary-foreground/10 hover:bg-primary-foreground/20 rounded-lg transition-colors"
@@ -35,7 +35,7 @@ const Footer = () => {
                 <Instagram className="h-5 w-5" />
               </a>
               <a
-                href="https://tiktok.com"
+                href="https://www.tiktok.com/@gvs.vehicular?lang=en"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 bg-primary-foreground/10 hover:bg-primary-foreground/20 rounded-lg transition-colors"
@@ -53,38 +53,38 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4 font-['Outfit']">Contacto</h4>
             <div className="space-y-3">
               <a
-                href="https://wa.me/5215512345678"
+                href="https://wa.me/5512880840"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-primary-foreground/80 hover:text-primary-foreground transition-colors"
               >
                 <MessageCircle className="h-5 w-5" />
-                <span>+52 55 1234 5678</span>
+                <span>+52 55 1288 0840</span>
               </a>
               <a
-                href="https://wa.me/5215523456789"
+                href="https://wa.me/525546144773"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-primary-foreground/80 hover:text-primary-foreground transition-colors"
               >
                 <MessageCircle className="h-5 w-5" />
-                <span>+52 55 2345 6789</span>
+                <span>+52 55 4614 4773</span>
               </a>
               <a
-                href="https://wa.me/5215534567890"
+                href="https://wa.me/+525543904228"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-primary-foreground/80 hover:text-primary-foreground transition-colors"
               >
                 <MessageCircle className="h-5 w-5" />
-                <span>+52 55 3456 7890</span>
+                <span>+52 55 4390 4228</span>
               </a>
               <a
-                href="mailto:info@gestoriadelsur.com"
+                href="mailto:gestoriaverificasur@gmail.com"
                 className="flex items-center gap-2 text-primary-foreground/80 hover:text-primary-foreground transition-colors"
               >
                 <Mail className="h-5 w-5" />
-                <span>info@gestoriadelsur.com</span>
+                <span>gestoriaverificasur@gmail.com</span>
               </a>
             </div>
           </div>

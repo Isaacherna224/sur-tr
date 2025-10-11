@@ -2,7 +2,7 @@ import { MessageCircle } from "lucide-react";
 import { Button } from "./ui/button";
 
 const FloatingWhatsAppButton = () => {
-  const whatsappNumber = "5215512345678"; // Replace with actual number
+  const whatsappNumber = "525512880840"; // Replace with actual number
   const whatsappMessage = "Hola, me gustaría información sobre sus servicios de gestoría vehicular";
   
   const handleClick = () => {

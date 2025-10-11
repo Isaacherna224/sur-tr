@@ -6,7 +6,7 @@ const SchemaMarkup = () => {
     "@type": "LocalBusiness",
     "name": "Gestoría y Verificaciones del Sur",
     "description": "Gestoría vehicular con 10 años de experiencia. Trámites de placas, verificación, tenencia y más en CDMX, Morelos, Estado de México y Guerrero.",
-    "url": "https://lovable.app",
+    
     "telephone": [
       "+525512345678",
       "+525523456789",
@@ -63,9 +63,9 @@ const SchemaMarkup = () => {
     ],
     "openingHours": "Mo-Fr 09:00-18:00, Sa 09:00-14:00",
     "sameAs": [
-      "https://facebook.com/gestoriadelsur",
-      "https://instagram.com/gestoriadelsur",
-      "https://tiktok.com/@gestoriadelsur"
+      "https://www.facebook.com/GVSgestorias",
+      "https://www.instagram.com/gvs.gestoriasyverificaciones/?hl=en",
+      "https://www.tiktok.com/@gvs.vehicular?lang=en"
     ]
   };
 

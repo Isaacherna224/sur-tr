@@ -99,7 +99,7 @@ const ServicesSection = () => {
             ¿No encuentras el trámite que necesitas?
           </p>
           <a
-            href="https://wa.me/5215512345678?text=Hola, necesito información sobre un trámite específico"
+            href="https://wa.me/5512880840?text=Hola, necesito información sobre un trámite específico"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center px-8 py-4 bg-accent text-accent-foreground hover:bg-accent-glow rounded-lg font-semibold text-lg shadow-accent transition-all duration-300 hover:scale-105"

@@ -87,7 +87,7 @@ const CoverageSection = () => {
         <div className="mt-12 text-center">
           <div className="bg-primary/5 border border-primary/20 rounded-lg p-6 max-w-3xl mx-auto">
             <h3 className="text-xl font-semibold mb-3 font-['Outfit']">
-              Estados que atendemos desde nuestras oficinas
+              Estados con los que realizamos todo tipo de tramite vehicular
             </h3>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
               <div className="p-3 bg-background rounded-lg">

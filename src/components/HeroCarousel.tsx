@@ -47,7 +47,7 @@ const HeroCarousel = () => {
 
   const handleWhatsAppContact = () => {
     window.open(
-      "https://wa.me/5215512345678?text=Hola, me gustaría información sobre sus servicios",
+      "https://wa.me/5512880840?text=Hola, me gustaría información sobre sus servicios",
       "_blank"
     );
   };
@@ -58,7 +58,9 @@ const HeroCarousel = () => {
         <div
           key={index}
           className={`absolute inset-0 transition-opacity duration-1000 ${
-            index === currentSlide ? "opacity-100" : "opacity-0"
+            index === currentSlide
+              ? "opacity-100 z-10"
+              : "opacity-0 z-0"
           }`}
         >
           <img
@@ -107,7 +109,7 @@ const HeroCarousel = () => {
         onClick={goToPrevious}
         variant="ghost"
         size="icon"
-        className="absolute left-4 top-1/2 -translate-y-1/2 text-primary-foreground hover:bg-primary-foreground/10 z-10"
+        className="absolute left-4 top-1/2 -translate-y-1/2 text-primary-foreground hover:bg-primary-foreground/10 z-20"
         aria-label="Slide anterior"
       >
         <ChevronLeft className="h-8 w-8" />
@@ -116,14 +118,14 @@ const HeroCarousel = () => {
         onClick={goToNext}
         variant="ghost"
         size="icon"
-        className="absolute right-4 top-1/2 -translate-y-1/2 text-primary-foreground hover:bg-primary-foreground/10 z-10"
+        className="absolute right-4 top-1/2 -translate-y-1/2 text-primary-foreground hover:bg-primary-foreground/10 z-20"
         aria-label="Siguiente slide"
       >
         <ChevronRight className="h-8 w-8" />
       </Button>
 
       {/* Dots Indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-2 z-10">
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-2 z-20">
         {slides.map((_, index) => (
           <button
             key={index}
