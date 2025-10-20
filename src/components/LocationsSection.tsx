@@ -1,5 +1,10 @@
 import { MapPin, Phone, Clock } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
+// Images for the team/vehicle gallery - replace these with your own JPEGs in src/assets or /public/images
+import autoImg from '@/assets/imagen3.jpeg';
+import motoImg from '@/assets/imagen2.jpeg';
+import teamImg from '@/assets/imagen4.jpeg';
+import officeImg from '@/assets/imagen1.jpeg';
 
 const locations = [
   {
@@ -108,6 +113,73 @@ const LocationsSection = () => {
           >
             Contactar por WhatsApp
           </a>
+        </div>
+        {/* Equipo / Flota gallery: 4 imágenes responsive */}
+        <div className="mt-12">
+          <h3 className="text-2xl md:text-3xl font-bold text-foreground text-center mb-6 font-['Outfit']">
+            Conoce a nuestro equipo y flota
+          </h3>
+          <p className="text-center text-muted-foreground max-w-2xl mx-auto mb-8">
+            Autos y motos dedicados a entregas personales, más nuestras oficinas listas para atenderte.
+          </p>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 items-stretch">
+            {/* Card 1 - Autos */}
+            <figure className="bg-card rounded-lg overflow-hidden shadow-medium hover:shadow-strong transition-shadow duration-300">
+              <img
+                src={autoImg}
+                alt="Autos para entregas personales"
+                className="w-full h-48 object-cover sm:h-56 lg:h-44"
+                loading="lazy"
+              />
+              <figcaption className="p-4 text-center">
+                <h4 className="font-semibold text-lg">Flota de Autos Rápidos</h4>
+                <p className="text-sm text-muted-foreground">Transporte seguro y puntual para tus envíos.</p>
+              </figcaption>
+            </figure>
+
+            {/* Card 2 - Motos */}
+            <figure className="bg-card rounded-lg overflow-hidden shadow-medium hover:shadow-strong transition-shadow duration-300">
+              <img
+                src={motoImg}
+                alt="Motos para entregas rápidas"
+                className="w-full h-48 object-cover sm:h-56 lg:h-44"
+                loading="lazy"
+              />
+              <figcaption className="p-4 text-center">
+                <h4 className="font-semibold text-lg">Motos Express</h4>
+                <p className="text-sm text-muted-foreground">Ideal para entregas urbanas y urgentes.</p>
+              </figcaption>
+            </figure>
+
+            {/* Card 3 - Entregas personales (vehículo mixto) */}
+            <figure className="bg-card rounded-lg overflow-hidden shadow-medium hover:shadow-strong transition-shadow duration-300">
+              <img
+                src={teamImg}
+                alt="Equipo de entregas y personal"
+                className="w-full h-48 object-cover sm:h-56 lg:h-44"
+                loading="lazy"
+              />
+              <figcaption className="p-4 text-center">
+                <h4 className="font-semibold text-lg">Equipo Profesional</h4>
+                <p className="text-sm text-muted-foreground">Personal capacitado y comprometido con la entrega.</p>
+              </figcaption>
+            </figure>
+
+            {/* Card 4 - Oficinas */}
+            <figure className="bg-card rounded-lg overflow-hidden shadow-medium hover:shadow-strong transition-shadow duration-300">
+              <img
+                src={officeImg}
+                alt="Nuestras oficinas"
+                className="w-full h-48 object-cover sm:h-56 lg:h-44"
+                loading="lazy"
+              />
+              <figcaption className="p-4 text-center">
+                <h4 className="font-semibold text-lg">Nuestras Oficinas</h4>
+                <p className="text-sm text-muted-foreground">Visítanos en cualquiera de nuestras sucursales en CDMX.</p>
+              </figcaption>
+            </figure>
+          </div>
         </div>
       </div>
     </section>

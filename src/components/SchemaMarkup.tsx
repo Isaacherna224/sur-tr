@@ -5,7 +5,7 @@ const SchemaMarkup = () => {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Gestoría y Verificaciones del Sur",
-    "description": "Gestoría vehicular con 10 años de experiencia. Trámites de placas, verificación, tenencia y más en CDMX, Morelos, Estado de México y Guerrero.",
+    "description": "Gestoría vehicular con 10 años de experiencia. Trámites de placas, verificación, tenencia y más en CDMX, Morelos, Estado de México, Michoacàn y Guerrero.",
     
     "telephone": [
       "+525512345678",

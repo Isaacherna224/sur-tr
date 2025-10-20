@@ -67,7 +67,7 @@ const CoverageSection = () => {
                   Servicio a toda la República
                 </h3>
                 <p className="text-muted-foreground">
-                  Enviamos tus documentos por paquetería segura a cualquier parte de México. Ideal para trámites de CDMX, Morelos, EdoMex o Guerrero desde otros estados.
+                  Enviamos tus documentos por paquetería segura a cualquier parte de México. Ideal para trámites de CDMX, Morelos, EdoMex, Michoacàn o Guerrero desde otros estados.
                 </p>
               </div>
               <div className="space-y-2">
@@ -77,7 +77,7 @@ const CoverageSection = () => {
                 </div>
                 <div className="flex items-center gap-2">
                   <Clock className="h-5 w-5 text-secondary" />
-                  <span className="text-sm">Entrega en 2-5 días hábiles</span>
+                  <span className="text-sm">Entrega en 2-5 días hábiles (Una vez realizado el tramite ante la dependencia)</span>
                 </div>
               </div>
             </CardContent>
@@ -101,6 +101,10 @@ const CoverageSection = () => {
               <div className="p-3 bg-background rounded-lg">
                 <MapPin className="h-6 w-6 text-primary mx-auto mb-1" />
                 <span className="font-semibold">Estado de México</span>
+              </div>
+              <div className="p-3 bg-background rounded-lg">
+                <MapPin className="h-6 w-6 text-primary mx-auto mb-1" />
+                <span className="font-semibold">Michoacàn</span>
               </div>
               <div className="p-3 bg-background rounded-lg">
                 <MapPin className="h-6 w-6 text-primary mx-auto mb-1" />

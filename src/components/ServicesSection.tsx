@@ -43,6 +43,7 @@ const services = [
       "Trámites Morelos: Todo el estado",
       "Trámites Estado de México: Zona metropolitana",
       "Trámites Guerrero: Principales municipios",
+      "Trámites Michoacàn: Principales municipios",
       "Asesoría personalizada según tu ubicación",
     ],
   },
@@ -57,7 +58,7 @@ const ServicesSection = () => {
             Nuestros Servicios
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-            Soluciones completas para todos tus trámites vehiculares en CDMX, Morelos, Estado de México y Guerrero
+            Soluciones completas para todos tus trámites vehiculares en CDMX, Morelos, Estado de México, Michoacàn y Guerrero
           </p>
         </div>
 

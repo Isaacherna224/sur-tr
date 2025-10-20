@@ -13,7 +13,7 @@ const Footer = () => {
               Gestoría y Verificaciones del Sur
             </h3>
             <p className="text-primary-foreground/80 mb-4">
-              Con 10 años de experiencia brindando servicios de gestoría vehicular en CDMX, Morelos, Estado de México y Guerrero. Tu aliado de confianza para todos tus trámites.
+              Con 10 años de experiencia brindando servicios de gestoría vehicular en CDMX, Morelos, Estado de México, Michoacàn y Guerrero. Tu aliado de confianza para todos tus trámites.
             </p>
             <div className="flex gap-4">
               <a
@@ -104,6 +104,10 @@ const Footer = () => {
               <li className="flex items-center gap-2">
                 <MapPin className="h-4 w-4" />
                 <span>Estado de México</span>
+              </li>
+               <li className="flex items-center gap-2">
+                <MapPin className="h-4 w-4" />
+                <span>Michoacàn</span>
               </li>
               <li className="flex items-center gap-2">
                 <MapPin className="h-4 w-4" />

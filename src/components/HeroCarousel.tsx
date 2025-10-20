@@ -8,7 +8,7 @@ import heroCoverage from "@/assets/hero-coverage.jpg";
 const slides = [
   {
     image: heroGestoria,
-    title: "Gestoría y Verificación Vehicular en CDMX, Morelos, EdoMex y Guerrero",
+    title: "Gestoría y Verificación Vehicular en CDMX, Morelos, EdoMex, Michoacàn y Guerrero",
     subtitle: "Trámites con 10 Años de Experiencia",
   },
   {
@@ -18,7 +18,7 @@ const slides = [
   },
   {
     image: heroCoverage,
-    title: "Cobertura en 4 Estados y Envío Nacional",
+    title: "Cobertura en 5 Estados y Envío Nacional",
     subtitle: "Entrega Personal en CDMX y Morelos",
   },
 ];
