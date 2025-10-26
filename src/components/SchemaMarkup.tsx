@@ -1,62 +1,58 @@
 import { Helmet } from "react-helmet";
 
 const SchemaMarkup = () => {
+  // Use more complete LocalBusiness schema including url, logo and real contact points.
+  const origin = typeof window !== "undefined" ? window.location.origin : "";
   const schemaData = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Gestoría y Verificaciones del Sur",
     "description": "Gestoría vehicular con 10 años de experiencia. Trámites de placas, verificación, tenencia y más en CDMX, Morelos, Estado de México, Michoacàn y Guerrero.",
-    
+    "url": origin || "",
+    "logo": origin ? `${origin}/favicon.ico` : "/favicon.ico",
+    "image": origin ? `${origin}/placeholder.svg` : "/placeholder.svg",
     "telephone": [
-      "+525512345678",
-      "+525523456789",
-      "+525534567890"
+      "+525512880840",
+      "+525546144773",
+      "+525543904228"
     ],
-    "email": "info@gestoriadelsur.com",
-    "areaServed": [
+    "contactPoint": [
       {
-        "@type": "State",
-        "name": "Ciudad de México"
-      },
-      {
-        "@type": "State",
-        "name": "Morelos"
-      },
-      {
-        "@type": "State",
-        "name": "Estado de México"
-      },
-      {
-        "@type": "State",
-        "name": "Guerrero"
+        "@type": "ContactPoint",
+        "telephone": "+525512880840",
+        "contactType": "customer service",
+        "areaServed": "MX",
+        "availableLanguage": ["Spanish"]
       }
     ],
+    "email": "gestoriaverificasur@gmail.com",
+    "areaServed": ["Ciudad de México", "Morelos", "Estado de México", "Michoacàn", "Guerrero"],
     "address": [
       {
         "@type": "PostalAddress",
-        "streetAddress": "Calle 16 de Septiembre #45, Col. Centro",
-        "addressLocality": "Cuauhtémoc",
-        "addressRegion": "CDMX",
-        "addressCountry": "MX"
-      },
-      {
-        "@type": "PostalAddress",
-        "streetAddress": "Av. Álvaro Obregón #128, Col. Roma Norte",
-        "addressLocality": "Cuauhtémoc",
-        "addressRegion": "CDMX",
-        "addressCountry": "MX"
-      },
-      {
-        "@type": "PostalAddress",
-        "streetAddress": "Calle Horacio #502, Col. Polanco",
-        "addressLocality": "Miguel Hidalgo",
-        "addressRegion": "CDMX",
-        "addressCountry": "MX"
-      },
-      {
-        "@type": "PostalAddress",
-        "streetAddress": "Av. Miguel Ángel de Quevedo #234, Col. Del Carmen",
+        "streetAddress": "Calz. de las Bombas 14, Coapa, Parque Coyoacán",
         "addressLocality": "Coyoacán",
+        "addressRegion": "CDMX",
+        "addressCountry": "MX"
+      },
+      {
+        "@type": "PostalAddress",
+        "streetAddress": "Armada de Mexico, Coapa, Culhuacan CTM Zona X",
+        "addressLocality": "Coyoacán",
+        "addressRegion": "CDMX",
+        "addressCountry": "MX"
+      },
+      {
+        "@type": "PostalAddress",
+        "streetAddress": "Prol. 16 de Septiembre 271A, Contadero",
+        "addressLocality": "Cuajimalpa de Morelos",
+        "addressRegion": "CDMX",
+        "addressCountry": "MX"
+      },
+      {
+        "@type": "PostalAddress",
+        "streetAddress": "Canal de Miramontes 3629, Coapa",
+        "addressLocality": "Tlalpan",
         "addressRegion": "CDMX",
         "addressCountry": "MX"
       }

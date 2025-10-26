@@ -12,3 +12,7 @@ Allow: /
 
 User-agent: *
 Allow: /
+
+# Sitemap: actualiza con la URL completa de tu sitio en producción, por ejemplo:
+# Sitemap: https://tusitio.com/sitemap.xml
+# Se añadió un sitemap por defecto en /sitemap.xml. Actualiza a la URL absoluta si es necesario.

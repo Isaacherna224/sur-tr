@@ -5,10 +5,12 @@ import LocationsSection from "@/components/LocationsSection";
 import Footer from "@/components/Footer";
 import FloatingWhatsAppButton from "@/components/FloatingWhatsAppButton";
 import SchemaMarkup from "@/components/SchemaMarkup";
+import Seo from "@/components/Seo";
 
 const Index = () => {
   return (
     <div className="min-h-screen">
+      <Seo />
       <SchemaMarkup />
       <HeroCarousel />
       <ServicesSection />
