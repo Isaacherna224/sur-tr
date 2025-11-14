@@ -14,7 +14,7 @@ const slides = [
   {
     image: heroDocuments,
     title: "Todos tus Trámites Vehiculares en un Solo Lugar",
-    subtitle: "Rápido, Seguro y Profesional",
+    subtitle: "Rápido Seguro y Profesional",
   },
   {
     image: heroCoverage,
