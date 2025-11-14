@@ -53,7 +53,7 @@ const HeroCarousel = () => {
   };
 
   return (
-    <section className="relative h-[600px] md:h-[700px] overflow-hidden bg-primary">
+    <section className="relative h-[350px] md:h-[450px] overflow-hidden bg-primary">
       {slides.map((slide, index) => (
         <div
           key={index}
@@ -75,23 +75,15 @@ const HeroCarousel = () => {
 
       {/* Overlay with single H1/subtitle and action buttons (keeps semantics and avoids duplicates) */}
       <div className="absolute inset-0 flex items-start z-20">
-        <div className="container mx-auto px-4 md:px-6 pt-28">
+        <div className="container mx-auto px-4 md:px-6 pt-16 md:pt-20">
           <div className="max-w-2xl animate-fade-in-up">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground mb-4 font-['Outfit']">
+            <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-primary-foreground mb-4 font-['Outfit']">
               {slides[currentSlide].title}
             </h1>
             <p className="text-xl md:text-2xl text-primary-foreground/90 mb-8 font-medium">
               {slides[currentSlide].subtitle}
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button
-                onClick={handleWhatsAppContact}
-                variant="cta"
-                size="lg"
-                className="text-lg"
-              >
-                Contactar por WhatsApp
-              </Button>
               <Button
                 onClick={() => document.getElementById("servicios")?.scrollIntoView({ behavior: "smooth" })}
                 variant="outline-light"

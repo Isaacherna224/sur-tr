@@ -1,10 +1,15 @@
+import React from "react";
 import { MapPin, Phone, Clock } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
-// Images for the team/vehicle gallery - replace these with your own JPEGs in src/assets or /public/images
-import autoImg from '@/assets/imagen3.jpeg';
-import motoImg from '@/assets/imagen2.jpeg';
-import teamImg from '@/assets/imagen4.jpeg';
-import officeImg from '@/assets/imagen1.jpeg';
+// Images
+import autoImg from "@/assets/imagen3.jpeg";
+import motoImg from "@/assets/imagen2.jpeg";
+import teamImg from "@/assets/imagen4.jpeg";
+import officeImg from "@/assets/imagen1.jpeg";
+
+type Props = {
+  whatsappMessage?: string;
+};
 
 const locations = [
   {
@@ -37,10 +42,24 @@ const locations = [
   },
 ];
 
-const LocationsSection = () => {
+const LocationsSection: React.FC<Props> = ({
+  whatsappMessage = "Hola, me gustaría información sobre sus sucursales",
+}) => {
+  const whatsappNumber = "525512880840";
+
+  const handleWhatsAppClick = () => {
+    window.open(
+      `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
+        whatsappMessage
+      )}`,
+      "_blank"
+    );
+  };
+
   return (
     <section className="py-16 md:py-24 bg-muted">
       <div className="container mx-auto px-4 md:px-6">
+        {/* Título */}
         <div className="text-center mb-12 animate-fade-in">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 font-['Outfit']">
             Nuestras Sucursales en CDMX
@@ -50,6 +69,7 @@ const LocationsSection = () => {
           </p>
         </div>
 
+        {/* Cards de sucursales */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
           {locations.map((location, index) => (
             <Card
@@ -76,7 +96,6 @@ const LocationsSection = () => {
                     title={`Mapa de ${location.name}`}
                   />
                 </div>
-                
                 <div className="space-y-3">
                   <div className="flex items-start gap-3">
                     <MapPin className="h-5 w-5 text-muted-foreground flex-shrink-0 mt-0.5" />
@@ -101,20 +120,20 @@ const LocationsSection = () => {
           ))}
         </div>
 
+        {/* Botón dinámico de WhatsApp */}
         <div className="mt-12 text-center">
           <p className="text-lg text-muted-foreground mb-6">
             ¿Prefieres que te contactemos nosotros?
           </p>
-          <a
-            href="https://wa.me/5512880840?text=Hola, me gustaría información sobre sus sucursales"
-            target="_blank"
-            rel="noopener noreferrer"
+          <button
+            onClick={handleWhatsAppClick}
             className="inline-flex items-center justify-center px-8 py-4 bg-accent text-accent-foreground hover:bg-accent-glow rounded-lg font-semibold text-lg shadow-accent transition-all duration-300 hover:scale-105"
           >
             Contactar por WhatsApp
-          </a>
+          </button>
         </div>
-        {/* Equipo / Flota gallery: 4 imágenes responsive */}
+
+        {/* Galería de equipo/flota */}
         <div className="mt-12">
           <h3 className="text-2xl md:text-3xl font-bold text-foreground text-center mb-6 font-['Outfit']">
             Conoce a nuestro equipo y flota
@@ -124,61 +143,39 @@ const LocationsSection = () => {
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 items-stretch">
-            {/* Card 1 - Autos */}
-            <figure className="bg-card rounded-lg overflow-hidden shadow-medium hover:shadow-strong transition-shadow duration-300">
-              <img
-                src={autoImg}
-                alt="Autos para entregas personales"
-                className="w-full h-48 object-cover sm:h-56 lg:h-44"
-                loading="lazy"
-              />
-              <figcaption className="p-4 text-center">
-                <h4 className="font-semibold text-lg">Flota de Autos Rápidos</h4>
-                <p className="text-sm text-muted-foreground">Transporte seguro y puntual para tus envíos.</p>
-              </figcaption>
-            </figure>
-
-            {/* Card 2 - Motos */}
-            <figure className="bg-card rounded-lg overflow-hidden shadow-medium hover:shadow-strong transition-shadow duration-300">
-              <img
-                src={motoImg}
-                alt="Motos para entregas rápidas"
-                className="w-full h-48 object-cover sm:h-56 lg:h-44"
-                loading="lazy"
-              />
-              <figcaption className="p-4 text-center">
-                <h4 className="font-semibold text-lg">Motos Express</h4>
-                <p className="text-sm text-muted-foreground">Ideal para entregas urbanas y urgentes.</p>
-              </figcaption>
-            </figure>
-
-            {/* Card 3 - Entregas personales (vehículo mixto) */}
-            <figure className="bg-card rounded-lg overflow-hidden shadow-medium hover:shadow-strong transition-shadow duration-300">
-              <img
-                src={teamImg}
-                alt="Equipo de entregas y personal"
-                className="w-full h-48 object-cover sm:h-56 lg:h-44"
-                loading="lazy"
-              />
-              <figcaption className="p-4 text-center">
-                <h4 className="font-semibold text-lg">Equipo Profesional</h4>
-                <p className="text-sm text-muted-foreground">Personal capacitado y comprometido con la entrega.</p>
-              </figcaption>
-            </figure>
-
-            {/* Card 4 - Oficinas */}
-            <figure className="bg-card rounded-lg overflow-hidden shadow-medium hover:shadow-strong transition-shadow duration-300">
-              <img
-                src={officeImg}
-                alt="Nuestras oficinas"
-                className="w-full h-48 object-cover sm:h-56 lg:h-44"
-                loading="lazy"
-              />
-              <figcaption className="p-4 text-center">
-                <h4 className="font-semibold text-lg">Nuestras Oficinas</h4>
-                <p className="text-sm text-muted-foreground">Visítanos en cualquiera de nuestras sucursales en CDMX.</p>
-              </figcaption>
-            </figure>
+            {[autoImg, motoImg, teamImg, officeImg].map((img, i) => (
+              <figure
+                key={i}
+                className="bg-card rounded-lg overflow-hidden shadow-medium hover:shadow-strong transition-shadow duration-300"
+              >
+                <img
+                  src={img}
+                  alt="Imagen de sucursal o flota"
+                  className="w-full h-48 object-cover sm:h-56 lg:h-44"
+                  loading="lazy"
+                />
+                <figcaption className="p-4 text-center">
+                  <h4 className="font-semibold text-lg">
+                    {i === 0
+                      ? "Flota de Autos Rápidos"
+                      : i === 1
+                      ? "Motos Express"
+                      : i === 2
+                      ? "Equipo Profesional"
+                      : "Nuestras Oficinas"}
+                  </h4>
+                  <p className="text-sm text-muted-foreground">
+                    {i === 0
+                      ? "Transporte seguro y puntual para tus envíos."
+                      : i === 1
+                      ? "Ideal para entregas urbanas y urgentes."
+                      : i === 2
+                      ? "Personal capacitado y comprometido con la entrega."
+                      : "Visítanos en cualquiera de nuestras sucursales en CDMX."}
+                  </p>
+                </figcaption>
+              </figure>
+            ))}
           </div>
         </div>
       </div>

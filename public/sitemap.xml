@@ -1,9 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Update the <loc> entries to the absolute URLs of your production site -->
+
+  <!-- Página principal -->
   <url>
-    <loc>/</loc>
+    <loc>https://gestoriasyverificacionesdelsur.com/</loc>
+    <lastmod>2025-01-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
+
+  <!-- Placas Morelos -->
+  <url>
+    <loc>https://gestoriasyverificacionesdelsur.com/placas-morelos</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Refrendo Morelos -->
+  <url>
+    <loc>https://gestoriasyverificacionesdelsur.com/refrendo-morelos</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+
 </urlset>

@@ -1,18 +1,12 @@
-User-agent: Googlebot
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
-User-agent: Twitterbot
-Allow: /
-
-User-agent: facebookexternalhit
-Allow: /
+# robots.txt - Gestorías y Verificaciones del Sur
+# Permite indexación completa del sitio
 
 User-agent: *
 Allow: /
 
-# Sitemap: actualiza con la URL completa de tu sitio en producción, por ejemplo:
-# Sitemap: https://tusitio.com/sitemap.xml
-# Se añadió un sitemap por defecto en /sitemap.xml. Actualiza a la URL absoluta si es necesario.
+# Sitemap principal del sitio
+Sitemap: https://gestoriasyverificacionesdelsur.com/sitemap.xml
+
+# Notas:
+# - Mantén este archivo en la raíz del dominio.
+# - No uses Disallow salvo que requieras bloquear rutas específicas.
