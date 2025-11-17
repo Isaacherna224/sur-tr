@@ -5,43 +5,41 @@ import LocationsSection from "@/components/LocationsSection";
 import FixedHeader from "@/components/HeaderPost";
 import FloatingWhatsAppButton from "@/components/FloatingWhatsAppButton";
 
-
 const RefrendoMorelosPage: React.FC = () => {
   return (
     <>
       <Seo
         title="Refrendo Morelos | Trámite rápido 1–3 días | Entrega CDMX"
-        description="Trámite de refrendo vehicular en Morelos 100% en línea por WhatsApp. Entrega en CDMX en 1 a 3 días hábiles. Se paga al recibir el refrendo. Servicio confiable y seguro."
+        description="Trámite de refrendo vehicular en Morelos 100% en línea por WhatsApp. Entrega personal GRATIS en CDMX y Morelos; envío por paquetería a todo México. Pagas al recibir o cuando tu envío esté listo."
         canonical="https://www.gestoriasyverificacionesdelsur.com/refrendo-morelos"
         image="https://www.gestoriasyverificacionesdelsur.com/og-refrendo-morelos.jpg"
       />
 
-      {/* Header fijo*/}
-      <FixedHeader whatsappMessage ="Hola, quiero información sobre el pago de refrendo vehicular en el estado de Morelos, incluyendo tiempos de entrega y métodos de pago."/>
+      {/* Header fijo */}
+      <FixedHeader
+        whatsappMessage="Hola, quiero información sobre el pago de refrendo vehicular en el estado de Morelos, incluyendo tiempos de entrega y métodos de pago."
+      />
 
       {/* Contenido principal */}
-
       <div className="max-w-10xl mx-auto px-10 py-10">
         {/* TÍTULO PRINCIPAL */}
         <h1 className="text-3xl font-bold mb-6 text-center">
-          Refrendo Morelos – Trámite Rápido, Seguro y 100% en Línea
+          Refrendo Morelos – Trámite rápido, seguro y 100% en línea
         </h1>
 
         {/* INTRO */}
         <p className="text-lg leading-relaxed mb-6">
           Si buscas realizar tu <strong>refrendo Morelos</strong> sin filas,
-          sin citas y sin perder tiempo, aquí puedes hacerlo de manera rápida,
-          segura y completamente en línea. Nuestro servicio está diseñado para
-          agilizar tu trámite desde WhatsApp y entregarte toda la documentación
-          lista en cuestión de horas.
+          sin citas y sin complicaciones, aquí lo hacemos de forma rápida y
+          segura. Gestionamos todo el trámite por WhatsApp para que no pierdas
+          tiempo y recibas tus comprobantes en el menor tiempo posible.
         </p>
 
         <p className="text-lg leading-relaxed mb-6">
-          Con más de 10 años de experiencia en trámites vehiculares, ofrecemos
-          un proceso confiable, transparente y con atención personalizada.
-          Además, atendemos principalmente a clientes en <strong>CDMX</strong>{" "}
-          y <strong>EdoMex</strong>, lo que garantiza una entrega rápida y un
-          soporte directo durante todo el proceso.
+          Contamos con más de 10 años de experiencia en trámites vehiculares.
+          Atendemos principalmente en <strong>CDMX</strong> y <strong>EdoMex</strong>,
+          garantizando entregas rápidas y soporte personalizado en todo el
+          proceso.
         </p>
 
         {/* SECCIÓN 1 */}
@@ -51,52 +49,47 @@ const RefrendoMorelosPage: React.FC = () => {
 
         <ul className="list-disc pl-6 space-y-2 text-lg">
           <li>Trámite de <strong>refrendo Morelos</strong> en minutos.</li>
-          <li>Todo 100% en línea a través de WhatsApp.</li>
-          <li>Sin filas, sin citas, sin trasladarte a módulos.</li>
-          <li>Pago al recibir tus comprobantes.</li>
+          <li>Proceso 100% en línea a través de WhatsApp.</li>
+          <li>Sin filas, sin citas y sin traslados a módulos.</li>
+          <li>Pago al recibir tus comprobantes o cuando el envío esté listo.</li>
           <li>Atención personalizada y soporte real.</li>
           <li>Más de 10 años de experiencia en trámites vehiculares.</li>
         </ul>
 
-        {/* SECCIÓN 2 */}
+        {/* ¿Qué es el refrendo? */}
         <h2 className="text-2xl font-semibold mt-10 mb-4">
           ¿Qué es el Refrendo Morelos?
         </h2>
 
         <p className="leading-relaxed mb-6">
-          El <strong>refrendo Morelos</strong> es el pago anual obligatorio para
-          mantener la vigencia de tus placas del estado de Morelos. Realizarlo
-          a tiempo te evita multas, recargos y problemas futuros. Con nuestro
-          servicio puedes hacerlo desde casa, de forma rápida y segura.
+          El <strong>refrendo Morelos</strong> es el pago anual que mantiene la
+          vigencia de tus placas del estado de Morelos. Realizarlo a tiempo te
+          evita multas y recargos. Nosotros te ayudamos a hacerlo desde casa y
+          te entregamos los comprobantes sin complicaciones.
         </p>
 
-        {/* SECCIÓN 3 */}
+        {/* ENTREGA Y PAGO */}
         <h2 className="text-2xl font-semibold mt-10 mb-4">
-          Requisitos para tramitar el Refrendo Morelos
+          Entrega y pago — CDMX, Morelos y resto de México
         </h2>
 
         <p className="leading-relaxed mb-4">
-          Para procesar tu trámite solo necesitas enviar por WhatsApp:
+          Ofrecemos opciones prácticas para que recibas tu refrendo de la forma
+          que prefieras y con total seguridad.
         </p>
 
-        <ul className="list-disc pl-6 space-y-2 text-lg">
-          <li>INE vigente por ambos lados.</li>
-          <li>Tarjeta de circulación.</li>
-          <li>Factura o carta factura (si aplica).</li>
-          <li>Placas y serie del vehículo.</li>
-          <li>Comprobante de domicilio.</li>
-        </ul>
+        <h3 className="text-xl font-medium mt-4 mb-2">Entrega personal (CDMX y Morelos)</h3>
+        <p className="leading-relaxed mb-4">
+          Entrega personal <strong>GRATIS</strong> en CDMX y Morelos. Recibe tus
+          comprobantes en mano y paga al recibir: una opción segura y cómoda si
+          estás en nuestras zonas de cobertura.
+        </p>
 
-        {/* SECCIÓN 4 */}
-        <h2 className="text-2xl font-semibold mt-10 mb-4">
-          ¿Cuánto cuesta el Refrendo Morelos?
-        </h2>
-
+        <h3 className="text-xl font-medium mt-4 mb-2">Envío por paquetería (todo México)</h3>
         <p className="leading-relaxed mb-6">
-          El costo del <strong>refrendo Morelos</strong> depende del tipo de
-          vehículo, su modelo y si existen adeudos anteriores. Para recibir una
-          cotización exacta, solo envíanos un mensaje por WhatsApp y te damos el
-          costo total en minutos.
+          Enviamos a cualquier estado de la república mediante paquetería
+          confiable. Tú pagas cuando tengas la seguridad de tu paquete este en camino. Manejamos seguimiento para tu
+          tranquilidad.
         </p>
 
         {/* CTA */}
@@ -111,36 +104,27 @@ const RefrendoMorelosPage: React.FC = () => {
           </a>
         </div>
 
-        {/* SECCIÓN 5 */}
+        {/* CONFIANZA */}
         <h2 className="text-2xl font-semibold mt-10 mb-4">
-          Entrega rápida en CDMX y Estado de México
-        </h2>
-
-        <p className="leading-relaxed mb-6">
-          La mayoría de nuestros clientes realizan su{" "}
-          <strong>refrendo Morelos</strong> desde CDMX y EdoMex, por lo que
-          optimizamos todo el proceso para garantizar rapidez y entrega segura
-          de tus comprobantes. Sin filas, sin esperas y sin riesgos.
-        </p>
-
-        {/* FINAL */}
-        <h2 className="text-2xl font-semibold mt-10 mb-4">
-          Realiza tu Refrendo Morelos hoy mismo
+          Confianza y soporte en todo el proceso
         </h2>
 
         <p className="leading-relaxed mb-10">
-          Miles de conductores confían cada año en nuestro servicio por su
-          rapidez, seguridad y atención personalizada. Si quieres realizar tu{" "}
-          <strong>refrendo Morelos</strong> sin complicaciones, envíanos mensaje
-          y lo procesamos hoy mismo.
+          Miles de conductores nos recomiendan por ofrecer un servicio rápido,
+          seguro y con atención personalizada. Si quieres realizar tu{" "}
+          <strong>refrendo Morelos</strong> sin complicaciones, contáctanos por
+          WhatsApp y lo procesamos hoy mismo.
         </p>
       </div>
 
-
       {/* Secciones reutilizables */}
       <CoverageSection />
-      <LocationsSection whatsappMessage ="Hola, quiero información sobre el pago de refrendo vehicular en el estado de Morelos, incluyendo tiempos de entrega y métodos de pago."/>
-      <FloatingWhatsAppButton whatsappMessage ="Hola, quiero información sobre el pago de refrendo vehicular en el estado de Morelos, incluyendo tiempos de entrega y métodos de pago."/>
+      <LocationsSection
+        whatsappMessage="Hola, quiero información sobre el pago de refrendo vehicular en el estado de Morelos, incluyendo tiempos de entrega y métodos de pago."
+      />
+      <FloatingWhatsAppButton
+        whatsappMessage="Hola, quiero información sobre el pago de refrendo vehicular en el estado de Morelos, incluyendo tiempos de entrega y métodos de pago."
+      />
     </>
   );
 };

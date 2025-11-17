@@ -57,6 +57,18 @@ const FixedHeader = ({
                 >
                   Refrendo Morelos
                 </Link>
+                <Link
+                  to="/verificacion-morelos"
+                  className="text-gray-800 hover:text-green-600 font-medium transition-colors"
+                >
+                  Verificacion Morelos
+                </Link>
+                <Link
+                  to="/tenencia-morelos"
+                  className="text-gray-800 hover:text-green-600 font-medium transition-colors"
+                >
+                  Tenencia Morelos
+                </Link>
               </div>
             </nav>
 
@@ -96,6 +108,18 @@ const FixedHeader = ({
               onClick={() => setIsMenuOpen(false)}
             >
               Refrendo Morelos
+            </Link>
+            <Link
+              to="/verificacion-morelos"
+              className="block text-gray-800 hover:text-green-600 font-medium transition-colors"
+            >
+              Verificacion Morelos
+            </Link>
+            <Link
+              to="/tenencia-morelos"
+              className="block text-gray-800 hover:text-green-600 font-medium transition-colors"
+            >
+              Tenencia Morelos
             </Link>
           </div>
         )}

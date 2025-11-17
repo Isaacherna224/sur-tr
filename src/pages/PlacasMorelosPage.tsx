@@ -5,22 +5,22 @@ import CoverageSection from "@/components/CoverageSection";
 import LocationsSection from "@/components/LocationsSection";
 import FloatingWhatsAppButton from "@/components/FloatingWhatsAppButton";
 
-
 const PlacasMorelosPage: React.FC = () => {
   return (
     <>
       <Seo
         title="Placas Morelos | Trámite rápido 1–3 días | Entrega CDMX"
-        description="Trámite de placas en Morelos 100% en línea por WhatsApp. Entrega en CDMX en 1 a 3 días hábiles. Se paga al recibir las placas. Servicio confiable y seguro."
+        description="Trámite de placas en Morelos 100% en línea por WhatsApp. Entrega personal GRATIS en CDMX y Morelos; envío por paquetería a todo México. Pagas al recibir o cuando tu envío esté listo."
         canonical="https://www.gestoriasyverificacionesdelsur.com/placas-morelos"
         image="https://www.gestoriasyverificacionesdelsur.com/og-placas-morelos.jpg"
       />
 
-      {/* Header fijo*/}
-      <FixedHeader whatsappMessage ="Hola, me gustaría recibir información sobre los trámites de placas en el estado de Morelos y cómo puedo realizarlos 100% en línea."/>
+      {/* Header fijo */}
+      <FixedHeader
+        whatsappMessage="Hola, me gustaría recibir información sobre los trámites de placas en el estado de Morelos y cómo puedo realizarlos 100% en línea."
+      />
 
       {/* Contenido principal */}
-
       <div className="max-w-10xl mx-auto px-10 py-10">
         {/* TÍTULO PRINCIPAL */}
         <h1 className="text-3xl font-bold mb-6 text-center">
@@ -29,75 +29,73 @@ const PlacasMorelosPage: React.FC = () => {
 
         {/* INTRO DESDE SEO */}
         <p className="text-lg leading-relaxed mb-6">
-          Si necesitas dar de alta tu vehículo con{" "}
-          <strong>placas Morelos</strong>, aquí puedes hacerlo de forma rápida,
-          segura y sin trámites complicados. Somos una gestoría vehicular con
-          más de 10 años de experiencia, y realizamos el trámite totalmente en
-          línea a través de WhatsApp, con entrega en{" "}
-          <strong>CDMX</strong> y <strong>EdoMex</strong>.
+          Si necesitas dar de alta tu vehículo con <strong>placas Morelos</strong>,
+          aquí puedes hacerlo de forma rápida, segura y sin trámites complicados.
+          Somos una gestoría vehicular con más de 10 años de experiencia y
+          realizamos el trámite totalmente en línea a través de WhatsApp.
         </p>
 
         <p className="text-lg leading-relaxed mb-6">
-          El proceso es sencillo: envías tus documentos, validamos la
-          información y tus <strong>placas Morelos</strong> se entregan en
-          1–3 días hábiles. Además, <strong>pagas al recibir</strong>, lo cual
-          garantiza un proceso totalmente seguro y confiable.
+          Nuestro proceso está diseñado para darte confianza: <strong>entrega
+          personal GRATIS en CDMX y Morelos</strong> o <strong>envío por
+          paquetería</strong> a cualquier estado de la república. Además,
+          <strong> pagas al recibir</strong> o cuando tu envío por paquetería esté
+          listo para entrega.
         </p>
 
         {/* SECCIÓN 1 */}
         <h2 className="text-2xl font-semibold mt-10 mb-4">
-          ¿Por qué tramitar Placas Morelos?
+          ¿Por qué tramitar Placas Morelos con nosotros?
         </h2>
 
         <p className="leading-relaxed mb-6">
-          Morelos ofrece un proceso más rápido y accesible comparado con otros
-          estados. Las <strong>placas Morelos</strong> permiten circular sin
-          problemas en la CDMX y Estado de México, además de ser ideales para
-          personas que buscan un trámite ágil, sin complicaciones y sin citas de
-          gobierno.
+          Las <strong>placas Morelos</strong> son una opción rápida y práctica para
+          muchos propietarios. Nuestro servicio se centra en reducir tiempo y
+          complicaciones: todo el trámite lo gestionamos por WhatsApp para que
+          tú no pierdas tiempo en filas ni citas.
         </p>
 
-        {/* SECCIÓN 2 */}
+        {/* BENEFICIOS */}
         <h2 className="text-2xl font-semibold mt-10 mb-4">
-          Beneficios de tramitar Placas Morelos con nosotros
+          Beneficios de tramitar tus placas con Gestorías y Verificaciones del Sur
         </h2>
 
         <ul className="list-disc pl-6 space-y-2 text-lg">
-          <li>Entrega de placas Morelos en <strong>1–3 días hábiles</strong>.</li>
+          <li>
+            <strong>Entrega personal GRATIS en CDMX y Morelos</strong> en 1–3
+            días hábiles.
+          </li>
+          <li>Envío por paquetería disponible a todo México.</li>
           <li>Atención personalizada por WhatsApp, sin filas ni citas.</li>
-          <li>Pago al recibir tus placas Morelos.</li>
+          <li>
+            <strong>Pagas al recibir</strong> o cuando el envío por paquetería
+            esté listo (tú eliges).
+          </li>
           <li>Servicio profesional con más de 10 años de experiencia.</li>
-          <li>Entrega segura en CDMX y EdoMex.</li>
-          <li>100% trámite digital.</li>
+          <li>100% trámite digital — todo vía WhatsApp para mayor seguridad.</li>
         </ul>
 
-        {/* SECCIÓN 3 */}
+        {/* SECCIÓN SOBRE ENTREGA Y PAGO */}
         <h2 className="text-2xl font-semibold mt-10 mb-4">
-          Requisitos para tramitar tus Placas Morelos
+          Entrega y pago — CDMX, Morelos y resto de México
         </h2>
 
         <p className="leading-relaxed mb-4">
-          Para comenzar tu trámite solo necesitas enviar por WhatsApp:
+          Tenemos dos opciones claras para tu comodidad:
         </p>
 
-        <ul className="list-disc pl-6 space-y-2 text-lg">
-          <li>INE vigente por ambos lados.</li>
-          <li>Comprobante de domicilio.</li>
-          <li>Factura del vehículo o carta factura.</li>
-          <li>Tarjeta de circulación (si aplica).</li>
-          <li>Número de serie (foto del VIN).</li>
-        </ul>
+        <h3 className="text-xl font-medium mt-4 mb-2">Entrega personal (CDMX y Morelos)</h3>
+        <p className="leading-relaxed mb-4">
+          Entrega personal <strong>GRATIS</strong> en CDMX y Morelos. Recibes tus
+          <strong> placas Morelos</strong> en mano y pagas al recibir. Esta opción
+          es ideal si vives cerca y quieres mayor seguridad al recibir tu trámite.
+        </p>
 
-        {/* SECCIÓN 4 */}
-        <h2 className="text-2xl font-semibold mt-10 mb-4">
-          ¿Cuánto cuesta tramitar Placas Morelos?
-        </h2>
-
+        <h3 className="text-xl font-medium mt-4 mb-2">Envío por paquetería (todo México)</h3>
         <p className="leading-relaxed mb-6">
-          El precio depende del tipo de vehículo y año. Para darte una cotización
-          exacta, solo envía un mensaje a nuestro WhatsApp. En minutos podrás
-          saber el costo total de tu trámite de{" "}
-          <strong>placas Morelos</strong>.
+          Enviamos a cualquier estado de la república mediante paquetería
+          confiable. Tú pagas cuando tengas la seguridad de tu paquete este en camino. Manejamos seguimiento para tu
+          tranquilidad.
         </p>
 
         {/* CTA */}
@@ -112,36 +110,27 @@ const PlacasMorelosPage: React.FC = () => {
           </a>
         </div>
 
-        {/* SECCIÓN 5 */}
+        {/* FINAL / CONFIANZA */}
         <h2 className="text-2xl font-semibold mt-10 mb-4">
-          Entrega rápida en CDMX y Estado de México
-        </h2>
-
-        <p className="leading-relaxed mb-6">
-          Nuestro servicio está optimizado para quienes viven en CDMX o EdoMex y
-          necesitan recibir sus <strong>placas Morelos</strong> de forma rápida,
-          segura y sin contratiempos. La entrega es personal y el{" "}
-          <strong>pago es al recibir</strong>.
-        </p>
-
-        {/* FINAL */}
-        <h2 className="text-2xl font-semibold mt-10 mb-4">
-          Tramita tus Placas Morelos hoy mismo
+          Confianza y soporte en todo el proceso
         </h2>
 
         <p className="leading-relaxed mb-10">
-          Miles de clientes confían en nosotros porque brindamos un servicio
-          profesional, claro y sin sorpresas. Si buscas la forma más rápida y
-          segura de obtener tus <strong>placas Morelos</strong>, somos tu mejor
-          opción. Envíanos mensaje y comenzamos ahora mismo.
+          Miles de clientes nos recomiendan por ofrecer un servicio claro, seguro
+          y sin sorpresas. Si buscas la forma más rápida y segura de obtener tus
+          <strong> placas Morelos</strong>, escríbenos por WhatsApp y te
+          atendemos inmediatamente.
         </p>
       </div>
 
-
       {/* Secciones reutilizables */}
       <CoverageSection />
-      <LocationsSection whatsappMessage ="Hola, me gustaría recibir información sobre los trámites de placas en el estado de Morelos y cómo puedo realizarlos 100% en línea."/>
-      <FloatingWhatsAppButton whatsappMessage ="Hola, me gustaría recibir información sobre los trámites de placas en el estado de Morelos y cómo puedo realizarlos 100% en línea."/>
+      <LocationsSection
+        whatsappMessage="Hola, me gustaría recibir información sobre los trámites de placas en el estado de Morelos y cómo puedo realizarlos 100% en línea."
+      />
+      <FloatingWhatsAppButton
+        whatsappMessage="Hola, me gustaría recibir información sobre los trámites de placas en el estado de Morelos y cómo puedo realizarlos 100% en línea."
+      />
     </>
   );
 };

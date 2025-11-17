@@ -25,4 +25,20 @@
     <priority>0.9</priority>
   </url>
 
+   <!-- Verificacion Morelos -->
+  <url>
+    <loc>https://gestoriasyverificacionesdelsur.com/verificacion-morelos</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Tenencia Morelos -->
+  <url>
+    <loc>https://gestoriasyverificacionesdelsur.com/tenencia-morelos</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+
 </urlset>
