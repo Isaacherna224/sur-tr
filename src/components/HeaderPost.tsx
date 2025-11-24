@@ -1,6 +1,7 @@
+"use client";
 import React, { useState } from "react";
 import { FaWhatsapp, FaBars, FaTimes } from "react-icons/fa";
-import { Link } from "react-router-dom"; // O next/link si usas Next.js
+import Link from "next/link";
 
 type Props = {
   whatsappMessage?: string;
@@ -40,31 +41,31 @@ const FixedHeader = ({
               {/* Links normales para escritorio */}
               <div className="hidden sm:flex space-x-6">
                 <Link
-                  to="/"
+                  href="/"
                   className="text-gray-800 hover:text-green-600 font-medium transition-colors"
                 >
                   Inicio
                 </Link>
                 <Link
-                  to="/placas-morelos"
+                  href="/placas-morelos"
                   className="text-gray-800 hover:text-green-600 font-medium transition-colors"
                 >
                   Placas Morelos
                 </Link>
                 <Link
-                  to="/refrendo-morelos"
+                  href="/refrendo-morelos"
                   className="text-gray-800 hover:text-green-600 font-medium transition-colors"
                 >
                   Refrendo Morelos
                 </Link>
                 <Link
-                  to="/verificacion-morelos"
+                  href="/verificacion-morelos"
                   className="text-gray-800 hover:text-green-600 font-medium transition-colors"
                 >
                   Verificacion Morelos
                 </Link>
                 <Link
-                  to="/tenencia-morelos"
+                  href="/tenencia-morelos"
                   className="text-gray-800 hover:text-green-600 font-medium transition-colors"
                 >
                   Tenencia Morelos
@@ -89,34 +90,34 @@ const FixedHeader = ({
         {isMenuOpen && (
           <div className="sm:hidden bg-white shadow-md px-4 py-2 space-y-2">
             <Link
-              to="/"
+              href="/"
               className="block text-gray-800 hover:text-green-600 font-medium transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               Inicio
             </Link>
             <Link
-              to="/placas-morelos"
+              href="/placas-morelos"
               className="block text-gray-800 hover:text-green-600 font-medium transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               Placas Morelos
             </Link>
             <Link
-              to="/refrendo-morelos"
+              href="/refrendo-morelos"
               className="block text-gray-800 hover:text-green-600 font-medium transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               Refrendo Morelos
             </Link>
             <Link
-              to="/verificacion-morelos"
+              href="/verificacion-morelos"
               className="block text-gray-800 hover:text-green-600 font-medium transition-colors"
             >
               Verificacion Morelos
             </Link>
             <Link
-              to="/tenencia-morelos"
+              href="/tenencia-morelos"
               className="block text-gray-800 hover:text-green-600 font-medium transition-colors"
             >
               Tenencia Morelos

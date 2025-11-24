@@ -1,23 +1,22 @@
+"use client";
 import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "./ui/button";
-import heroGestoria from "@/assets/hero-gestoria.jpg";
-import heroDocuments from "@/assets/hero-documents.jpg";
-import heroCoverage from "@/assets/hero-coverage.jpg";
+import Image from "next/image";
 
 const slides = [
   {
-    image: heroGestoria,
+    image: "/hero-gestoria.jpg",
     title: "Gestoría y Verificación Vehicular en CDMX, Morelos, EdoMex, Michoacàn y Guerrero",
     subtitle: "Trámites con 10 Años de Experiencia",
   },
   {
-    image: heroDocuments,
+    image: "/hero-documents.jpg",
     title: "Todos tus Trámites Vehiculares en un Solo Lugar",
     subtitle: "Rápido Seguro y Profesional",
   },
   {
-    image: heroCoverage,
+    image: "/hero-coverage.jpg",
     title: "Cobertura en 5 Estados y Envío Nacional",
     subtitle: "Entrega Personal en CDMX y Morelos",
   },
@@ -61,12 +60,10 @@ const HeroCarousel = () => {
             index === currentSlide ? "opacity-100 z-10" : "opacity-0 z-0"
           }`}
         >
-          <img
+          <Image
             src={slide.image}
             alt={slide.title}
-            className="w-full h-full object-cover"
-            loading={index === 0 ? "eager" : "lazy"}
-            fetchPriority={index === 0 ? "high" : "auto"}
+            priority={index === 0}
           />
           <div className="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/70 to-transparent" />
           {/* Removed per-slide text and buttons to avoid duplication; overlay below handles content and actions */}

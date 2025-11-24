@@ -1,4 +1,4 @@
-import { Truck, MapPin, Package, Clock } from "lucide-react";
+import { Truck, MapPin, Package, Clock, CheckCircle } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 
 const CoverageSection = () => {
@@ -117,8 +117,5 @@ const CoverageSection = () => {
     </section>
   );
 };
-
-// Missing import
-import { CheckCircle } from "lucide-react";
 
 export default CoverageSection;

@@ -1,11 +1,13 @@
+"use client";
 import React from "react";
 import { MapPin, Phone, Clock } from "lucide-react";
+import Image, { StaticImageData } from "next/image";
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 // Images
-import autoImg from "@/assets/imagen3.jpeg";
-import motoImg from "@/assets/imagen2.jpeg";
-import teamImg from "@/assets/imagen4.jpeg";
-import officeImg from "@/assets/imagen1.jpeg";
+const autoImg = "/imagen3.jpeg";
+const motoImg = "/imagen2.jpeg";
+const teamImg = "/imagen4.jpeg";
+const officeImg = "/imagen1.jpeg";
 
 type Props = {
   whatsappMessage?: string;
@@ -143,16 +145,18 @@ const LocationsSection: React.FC<Props> = ({
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 items-stretch">
-            {[autoImg, motoImg, teamImg, officeImg].map((img, i) => (
+            {[autoImg, motoImg, teamImg, officeImg].map((img: string, i) => (
               <figure
                 key={i}
                 className="bg-card rounded-lg overflow-hidden shadow-medium hover:shadow-strong transition-shadow duration-300"
               >
-                <img
-                  src={img}
+                <Image
+                  src={img} // e.g., "/imagen3.jpeg"
                   alt="Imagen de sucursal o flota"
                   className="w-full h-48 object-cover sm:h-56 lg:h-44"
-                  loading="lazy"
+                  width={800} // Ancho original de la imagen
+                  height={600} // Alto original de la imagen
+                  // 'placeholder="blur"' es opcional pero recomendado para una mejor experiencia
                 />
                 <figcaption className="p-4 text-center">
                   <h4 className="font-semibold text-lg">
