@@ -10,7 +10,7 @@ const SchemaMarkup = () => {
     "description": "Gestoría vehicular con 10 años de experiencia. Trámites de placas, verificación, tenencia y más en CDMX, Morelos, Estado de México, Michoacàn y Guerrero.",
     "url": origin || "",
     "logo": origin ? `${origin}/favicon.ico` : "/favicon.ico",
-    "image": origin ? `${origin}/placeholder.svg` : "/placeholder.svg",
+    "image": origin ? `${origin}/general.png` : "/general.png",
     "telephone": [
       "+525512880840",
       "+525546144773",
