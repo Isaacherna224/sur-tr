@@ -1,5 +1,5 @@
 import React from "react";
-import Seo from "@/components/Seo";
+import { Seo } from "@/components/Seo";
 import FixedHeader from "@/components/HeaderPost";
 import CoverageSection from "@/components/CoverageSection";
 import LocationsSection from "@/components/LocationsSection";
@@ -11,8 +11,8 @@ const PlacasMorelosPage: React.FC = () => {
       <Seo
         title="Placas Morelos | Trámite rápido 1–3 días | Entrega CDMX"
         description="Trámite de placas en Morelos 100% en línea por WhatsApp. Entrega personal GRATIS en CDMX y Morelos; envío por paquetería a todo México. Pagas al recibir o cuando tu envío esté listo."
-        canonical="https://www.gestoriasyverificacionesdelsur.com/placas-morelos"
-        image="https://www.gestoriasyverificacionesdelsur.com/og-placas-morelos.jpg"
+        url="https://www.gestoriasyverificacionesdelsur.com/placas-morelos"
+        image="https://www.gestoriasyverificacionesdelsur.com/src/assets/placas.png"
       />
 
       {/* Header fijo */}

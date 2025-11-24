@@ -1,5 +1,5 @@
 import React from "react";
-import Seo from "@/components/Seo";
+import { Seo } from "@/components/Seo";
 import CoverageSection from "@/components/CoverageSection";
 import LocationsSection from "@/components/LocationsSection";
 import FixedHeader from "@/components/HeaderPost";
@@ -11,8 +11,8 @@ const VerificacionMorelosPage: React.FC = () => {
       <Seo
         title="Verificación Morelos | Servicio a domicilio | Evita multas"
         description="Servicio de verificación Morelos sin filas. Vamos por tu auto, lo verificamos y te lo entregamos el mismo día. Evita multas y restricciones. Pago al final."
-        canonical="https://www.gestoriasyverificacionesdelsur.com/verificacion-morelos"
-        image="https://www.gestoriasyverificacionesdelsur.com/og-verificacion-morelos.jpg"
+        url="https://www.gestoriasyverificacionesdelsur.com/verificacion-morelos"
+        image="https://www.gestoriasyverificacionesdelsur.com/src/assets/general.png"
       />
 
       <FixedHeader whatsappMessage="Hola, quiero información sobre la verificación vehicular en Morelos." />

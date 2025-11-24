@@ -1,5 +1,5 @@
 import React from "react";
-import Seo from "@/components/Seo";
+import { Seo } from "@/components/Seo";
 import CoverageSection from "@/components/CoverageSection";
 import LocationsSection from "@/components/LocationsSection";
 import FixedHeader from "@/components/HeaderPost";
@@ -11,8 +11,8 @@ const RefrendoMorelosPage: React.FC = () => {
       <Seo
         title="Refrendo Morelos | Trámite rápido 1–3 días | Entrega CDMX"
         description="Trámite de refrendo vehicular en Morelos 100% en línea por WhatsApp. Entrega personal GRATIS en CDMX y Morelos; envío por paquetería a todo México. Pagas al recibir o cuando tu envío esté listo."
-        canonical="https://www.gestoriasyverificacionesdelsur.com/refrendo-morelos"
-        image="https://www.gestoriasyverificacionesdelsur.com/og-refrendo-morelos.jpg"
+        url="https://www.gestoriasyverificacionesdelsur.com/refrendo-morelos"
+        image="https://www.gestoriasyverificacionesdelsur.com/src/assets/general.png"
       />
 
       {/* Header fijo */}

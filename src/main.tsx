@@ -1,5 +1,11 @@
 import { createRoot } from "react-dom/client";
-import App from "./App.tsx";
+import App from "./App";
 import "./index.css";
 
-createRoot(document.getElementById("root")!).render(<App />);
+const root = createRoot(document.getElementById("root")!);
+
+root.render(<App />);
+
+window.addEventListener("load", () => {
+  document.dispatchEvent(new Event("render-ready"));
+});
