@@ -9,10 +9,7 @@ const TenenciaMorelosPage: React.FC = () => {
   return (
     <>
       <Seo
-        title="Tenencia Morelos | Pago rápido | Sin filas y sin venir"
-        description="Pago de tenencia Morelos para quienes no pagaron su refrendo. Nosotros hacemos todo por ti en Morelos. Pago al recibir tu comprobante y tarjeta de circulación vigente."
-        url="https://www.gestoriasyverificacionesdelsur.com/tenencia-morelos"
-        image="https://www.gestoriasyverificacionesdelsur.com/src/assets/general.png"
+        page="tenenciaMorelos"
       />
 
       <FixedHeader whatsappMessage="Hola, quiero información sobre el pago de la tenencia vehicular en Morelos. ¿Me puedes ayudar?" />

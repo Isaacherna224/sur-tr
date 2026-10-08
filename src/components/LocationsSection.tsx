@@ -25,21 +25,7 @@ const locations = [
     phone: "+52 55 1288 0840, +52 55 4614 4773, +52 55 4390 4228",
     hours: "Lun - Vie: 10:00 - 18:00 | Sáb: 9:00 - 15:00",
     mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.4054763326476!2d-99.1116764!3d19.3082037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce01b33458d417%3A0x4001bc16c0c9ff67!2sGVS%20gestor%C3%ADa%20y%20verificaciones%20del%20sur!5e0!3m2!1sen!2smx!4v1760142417493!5m2!1sen!2smx",
-  },
-  {
-    name: "Sucursal Cuajimalpa",
-    address: "Prol. 16 de Septiembre 271A, Contadero, Cuajimalpa de Morelos, 05230 Ciudad de México, CDMX",
-    phone: "+52 55 1288 0840, +52 55 4614 4773, +52 55 4390 4228",
-    hours: "Lun - Vie: 10:00 - 18:00 | Sáb: 9:00 - 15:00",
-    mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3764.4659027169378!2d-99.3040245!3d19.348969099999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d207306e51b035%3A0xb0227e11740f85b0!2sGVS!5e0!3m2!1sen!2smx!4v1760142446542!5m2!1sen!2smx",
-  },
-  {
-    name: "Sucursal Coapa Tlalpan",
-    address: "Canal de Miramontes 3629, Coapa, Villa Coapa, Tlalpan, 14390 Ciudad de México, CDMX",
-    phone: "+52 55 1288 0840, +52 55 4614 4773, +52 55 4390 4228",
-    hours: "Lun - Vie: 10:00 - 18:00 | Sáb: 9:00 - 15:00",
-    mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.7994467912167!2d-99.12605889999999!3d19.291085799999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce010f4fb81103%3A0xa3ddfca42784a9a7!2sGvs%20gestor%C3%ADa%20y%20verificaciones%20del%20sur!5e0!3m2!1sen!2smx!4v1760142473855!5m2!1sen!2smx",
-  },
+  }
 ];
 
 const LocationsSection: React.FC<Props> = ({
@@ -65,7 +51,7 @@ const LocationsSection: React.FC<Props> = ({
             Nuestras Sucursales en CDMX
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-            4 ubicaciones estratégicas para atenderte mejor
+            2 ubicaciones estratégicas para atenderte mejor
           </p>
         </div>
 

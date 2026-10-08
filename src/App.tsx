@@ -9,6 +9,7 @@ import TenenciaMorelosPage from './pages/TenenciaMorelosPage';
 
 import Index from './pages/Index';
 import NotFound from './pages/NotFound';
+import SchemaMarkup from './components/SchemaMarkup';
 
 import './App.css';
 
@@ -16,6 +17,7 @@ const App: React.FC = () => {
   return (
     <HelmetProvider>
       <BrowserRouter>
+        <SchemaMarkup />
         <Layout>
           <Routes>
             <Route path="/" element={<Index />} />

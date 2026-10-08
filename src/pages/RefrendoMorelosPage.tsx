@@ -9,10 +9,7 @@ const RefrendoMorelosPage: React.FC = () => {
   return (
     <>
       <Seo
-        title="Refrendo Morelos | Trámite rápido 1–3 días | Entrega CDMX"
-        description="Trámite de refrendo vehicular en Morelos 100% en línea por WhatsApp. Entrega personal GRATIS en CDMX y Morelos; envío por paquetería a todo México. Pagas al recibir o cuando tu envío esté listo."
-        url="https://www.gestoriasyverificacionesdelsur.com/refrendo-morelos"
-        image="https://www.gestoriasyverificacionesdelsur.com/src/assets/general.png"
+        page="refrendoMorelos"
       />
 
       {/* Header fijo */}

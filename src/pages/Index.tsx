@@ -4,10 +4,12 @@ import CoverageSection from "@/components/CoverageSection";
 import LocationsSection from "@/components/LocationsSection";
 import FixedHeader from "@/components/HeaderPost";
 import FloatingWhatsAppButton from "@/components/FloatingWhatsAppButton";
+import { Seo } from "@/components/Seo";
 
 const Index = () => {
   return (
     <>
+      <Seo page="home" />
       {/* Header fijo*/}
       <FixedHeader />
       <HeroCarousel/>

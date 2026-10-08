@@ -9,10 +9,7 @@ const PlacasMorelosPage: React.FC = () => {
   return (
     <>
       <Seo
-        title="Placas Morelos | Trámite rápido 1–3 días | Entrega CDMX"
-        description="Trámite de placas en Morelos 100% en línea por WhatsApp. Entrega personal GRATIS en CDMX y Morelos; envío por paquetería a todo México. Pagas al recibir o cuando tu envío esté listo."
-        url="https://www.gestoriasyverificacionesdelsur.com/placas-morelos"
-        image="https://www.gestoriasyverificacionesdelsur.com/src/assets/placas.png"
+        page="placasMorelos"
       />
 
       {/* Header fijo */}

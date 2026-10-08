@@ -110,6 +110,10 @@ const CoverageSection = () => {
                 <MapPin className="h-6 w-6 text-primary mx-auto mb-1" />
                 <span className="font-semibold">Guerrero</span>
               </div>
+              <div className="p-3 bg-background rounded-lg">
+                <MapPin className="h-6 w-6 text-primary mx-auto mb-1" />
+                <span className="font-semibold">Chiapas</span>
+              </div>
             </div>
           </div>
         </div>

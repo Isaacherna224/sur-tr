@@ -4,9 +4,4 @@
 User-agent: *
 Allow: /
 
-# Sitemap principal del sitio
 Sitemap: https://gestoriasyverificacionesdelsur.com/sitemap.xml
-
-# Notas:
-# - Mantén este archivo en la raíz del dominio.
-# - No uses Disallow salvo que requieras bloquear rutas específicas.

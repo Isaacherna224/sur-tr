@@ -9,10 +9,7 @@ const VerificacionMorelosPage: React.FC = () => {
   return (
     <>
       <Seo
-        title="Verificación Morelos | Servicio a domicilio | Evita multas"
-        description="Servicio de verificación Morelos sin filas. Vamos por tu auto, lo verificamos y te lo entregamos el mismo día. Evita multas y restricciones. Pago al final."
-        url="https://www.gestoriasyverificacionesdelsur.com/verificacion-morelos"
-        image="https://www.gestoriasyverificacionesdelsur.com/src/assets/general.png"
+        page="verificacionMorelos"
       />
 
       <FixedHeader whatsappMessage="Hola, quiero información sobre la verificación vehicular en Morelos." />

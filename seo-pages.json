@@ -1,0 +1,72 @@
+{
+  "home": {
+    "path": "/",
+    "title": "Gestoría vehicular en CDMX y Morelos | GVS",
+    "description": "Trámites de placas, refrendo, tenencia y verificación vehicular en Morelos y CDMX. Atención personalizada por WhatsApp.",
+    "image": "/og/general.jpg",
+    "imageAlt": "Gestoría y Verificaciones del Sur: trámites vehiculares en CDMX y Morelos",
+    "heading": "Gestoría vehicular en CDMX y Morelos",
+    "paragraphs": [
+      "Realizamos trámites de placas, control vehicular, refrendo, tenencia y verificación vehicular con atención personalizada por WhatsApp.",
+      "Atendemos CDMX, Morelos, Estado de México, Michoacán, Guerrero y Chiapas. Contáctanos para confirmar requisitos, disponibilidad y cobertura de tu trámite."
+    ],
+    "links": [
+      { "path": "/placas-morelos", "label": "Trámite de placas Morelos" },
+      { "path": "/refrendo-morelos", "label": "Refrendo Morelos" },
+      { "path": "/verificacion-morelos", "label": "Verificación Morelos" },
+      { "path": "/tenencia-morelos", "label": "Tenencia Morelos" }
+    ]
+  },
+  "placasMorelos": {
+    "path": "/placas-morelos",
+    "title": "Placas Morelos | Trámite vehicular por WhatsApp | GVS",
+    "description": "Solicita información para tramitar placas de Morelos por WhatsApp. Atención personalizada, entrega en CDMX y Morelos y envíos a todo México.",
+    "image": "/og/placas-morelos.jpg",
+    "imageAlt": "Trámite de placas de Morelos con Gestoría y Verificaciones del Sur",
+    "heading": "Trámite de Placas Morelos – Rápido, Seguro y 100% en Línea",
+    "paragraphs": [
+      "Si necesitas dar de alta tu vehículo con placas Morelos, aquí puedes hacerlo de forma rápida, segura y sin trámites complicados. Somos una gestoría vehicular con más de 10 años de experiencia y realizamos el trámite totalmente en línea a través de WhatsApp.",
+      "Nuestro proceso está diseñado para darte confianza: entrega personal GRATIS en CDMX y Morelos o envío por paquetería a cualquier estado de la república. Además, pagas al recibir o cuando tu envío por paquetería esté listo para entrega."
+    ],
+    "links": []
+  },
+  "refrendoMorelos": {
+    "path": "/refrendo-morelos",
+    "title": "Refrendo Morelos | Trámite vehicular por WhatsApp | GVS",
+    "description": "Recibe orientación para realizar el refrendo vehicular de Morelos. Atención por WhatsApp, entrega en CDMX y Morelos y envío a todo México.",
+    "image": "/og/general.jpg",
+    "imageAlt": "Gestoría vehicular para refrendo de Morelos",
+    "heading": "Refrendo Morelos – Trámite rápido, seguro y 100% en línea",
+    "paragraphs": [
+      "Si buscas realizar tu refrendo Morelos sin filas, sin citas y sin complicaciones, aquí lo hacemos de forma rápida y segura. Gestionamos todo el trámite por WhatsApp para que no pierdas tiempo y recibas tus comprobantes en el menor tiempo posible.",
+      "Contamos con más de 10 años de experiencia en trámites vehiculares. Atendemos principalmente en CDMX y EdoMex, garantizando entregas rápidas y soporte personalizado en todo el proceso."
+    ],
+    "links": []
+  },
+  "verificacionMorelos": {
+    "path": "/verificacion-morelos",
+    "title": "Verificación Morelos | Servicio vehicular | GVS",
+    "description": "Consulta el servicio de verificación vehicular en Morelos y su disponibilidad para CDMX y Estado de México. Atención personalizada por WhatsApp.",
+    "image": "/og/general.jpg",
+    "imageAlt": "Servicio de verificación vehicular en Morelos",
+    "heading": "Verificación Morelos – Servicio a Domicilio, Rápido y Sin Filas",
+    "paragraphs": [
+      "Nuestro servicio de verificación Morelos está diseñado para evitarte filas, gastos innecesarios y pérdida de tiempo. Nosotros vamos directamente a recoger tu vehículo, lo llevamos al verificentro en Morelos y te lo regresamos el mismo día ya verificado y con su holograma correspondiente.",
+      "Atendemos principalmente a clientes en CDMX y EdoMex, ofreciendo un servicio seguro, profesional y con atención personalizada de inicio a fin. Tú no tienes que moverte de casa: nosotros nos encargamos de todo."
+    ],
+    "links": []
+  },
+  "tenenciaMorelos": {
+    "path": "/tenencia-morelos",
+    "title": "Tenencia Morelos | Orientación para tu trámite | GVS",
+    "description": "Obtén orientación para revisar y gestionar la tenencia vehicular de Morelos. Consulta requisitos y atención por WhatsApp.",
+    "image": "/og/general.jpg",
+    "imageAlt": "Gestoría para el pago de tenencia vehicular en Morelos",
+    "heading": "Tenencia Morelos – Pago Rápido, Seguro y Sin Que Tengas Que Venir",
+    "paragraphs": [
+      "El pago de la tenencia Morelos aplica para automovilistas que no pagaron su refrendo durante los primeros meses del año. Si este es tu caso, no necesitas trasladarte a Morelos ni formarte en filas: nosotros hacemos todo el trámite por ti.",
+      "Pagamos tu tenencia directamente en las oficinas de Movilidad y Transporte de Morelos y te entregamos tu comprobante y tarjeta de circulación vigente en 1 a 3 días hábiles. Todo el proceso es completamente en línea y a través de WhatsApp."
+    ],
+    "links": []
+  }
+}
