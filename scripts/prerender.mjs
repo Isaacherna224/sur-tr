@@ -100,6 +100,12 @@ for (const page of Object.values(seoPages)) {
     /<div id="root">[\s\S]*?<\/div>/i,
     `<div id="root">${buildPageContent(page)}</div>`,
   );
+  if (page.path !== "/") {
+    html = html.replace(
+      /<link[^>]*rel="preload"[^>]*href="\/images\/hero-gestoria-(?:640|1280)\.webp"[^>]*\/?>/gi,
+      "",
+    );
+  }
 
   const outputPath =
     page.path === "/"
