@@ -25,7 +25,12 @@ const escapeHtml = (value) =>
 
 const setMeta = (html, attribute, key, content) => {
   const tag = `<meta data-rh="true" ${attribute}="${key}" content="${escapeHtml(content)}" />`;
-  const pattern = new RegExp(`<meta\\s+${attribute}="${key}"[^>]*>`, "i");
+  const escapedAttribute = attribute.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const escapedKey = key.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const pattern = new RegExp(
+    `<meta\\b(?=[^>]*\\s${escapedAttribute}="${escapedKey}")[^>]*>`,
+    "i",
+  );
   return pattern.test(html)
     ? html.replace(pattern, tag)
     : html.replace("</head>", `  ${tag}\n  </head>`);
@@ -33,7 +38,7 @@ const setMeta = (html, attribute, key, content) => {
 
 const setCanonical = (html, url) => {
   const tag = `<link data-rh="true" rel="canonical" href="${escapeHtml(url)}" />`;
-  const pattern = /<link\s+rel="canonical"[^>]*>/i;
+  const pattern = /<link\b(?=[^>]*\srel="canonical")[^>]*>/i;
   return pattern.test(html)
     ? html.replace(pattern, tag)
     : html.replace("</head>", `  ${tag}\n  </head>`);
