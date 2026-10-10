@@ -1,4 +1,8 @@
 import { Facebook, Instagram, MessageCircle, Phone, Mail, MapPin } from "lucide-react";
+import { Link } from "react-router-dom";
+import seoPages from "../../seo-pages.json";
+
+const camera = seoPages.camaraAuto;
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -14,6 +18,23 @@ const Footer = () => {
             </h3>
             <p className="text-primary-foreground/80 mb-4">
               Con 10 años de experiencia brindando servicios de gestoría vehicular en CDMX, Morelos, Estado de México, Michoacàn, Guerrero y Chiapas. Tu aliado de confianza para todos tus trámites.
+            </p>
+            <Link
+              to="/camara-para-auto"
+              className="mb-4 inline-block text-primary-foreground underline-offset-4 hover:underline"
+            >
+              Conoce la cámara para auto M200
+            </Link>
+            <a
+              href={camera.affiliateUrl}
+              target="_blank"
+              rel="sponsored nofollow noopener"
+              className="mb-2 block font-semibold text-primary-foreground underline-offset-4 hover:underline"
+            >
+              Ver cámara M200 en Mercado Libre ↗
+            </a>
+            <p className="mb-5 text-xs leading-relaxed text-primary-foreground/75">
+              Enlace de afiliado: GVS puede recibir una comisión si compras, sin costo adicional para ti.
             </p>
             <div className="flex gap-4">
               <a

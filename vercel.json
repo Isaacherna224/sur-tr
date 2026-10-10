@@ -26,6 +26,10 @@
       "destination": "/tenencia-morelos/index.html"
     },
     {
+      "source": "/camara-para-auto",
+      "destination": "/camara-para-auto/index.html"
+    },
+    {
       "source": "/((?!api/|sitemap.xml|robots.txt|_next/|favicon.ico|.*\\..*).*)",
       "destination": "/index.html"
     }

@@ -6,6 +6,7 @@ import PlacasMorelosPage from './pages/PlacasMorelosPage';
 import RefrendoMorelosPage from './pages/RefrendoMorelosPage';
 import VerificacionMorelosPage from './pages/VerificacionMorelosPage';
 import TenenciaMorelosPage from './pages/TenenciaMorelosPage';
+import CamaraAutoPage from './pages/CamaraAutoPage';
 
 import Index from './pages/Index';
 import NotFound from './pages/NotFound';
@@ -25,6 +26,7 @@ const App: React.FC = () => {
             <Route path="/refrendo-morelos" element={<RefrendoMorelosPage />} />
             <Route path="/verificacion-morelos" element={<VerificacionMorelosPage />} />
             <Route path="/tenencia-morelos" element={<TenenciaMorelosPage />} />
+            <Route path="/camara-para-auto" element={<CamaraAutoPage />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Layout>

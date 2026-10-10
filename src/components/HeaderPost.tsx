@@ -75,7 +75,7 @@ const FixedHeader = ({
             {/* Botón WhatsApp siempre visible */}
             <button
               onClick={handleWhatsAppClick}
-              className="flex items-center bg-green-500 hover:bg-green-600 text-white px-3 py-2 rounded-full shadow-md transition-colors"
+              className="flex items-center bg-green-700 hover:bg-green-800 text-white px-3 py-2 rounded-full shadow-md transition-colors"
             >
               <FaWhatsapp className="h-6 w-6 mr-2" />
               <span className="text-sm font-semibold">

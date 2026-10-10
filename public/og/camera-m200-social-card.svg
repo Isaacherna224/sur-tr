@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#102b49"/>
+      <stop offset="1" stop-color="#07182b"/>
+    </linearGradient>
+    <linearGradient id="blend" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#07182b"/>
+      <stop offset="1" stop-color="#07182b" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="product">
+      <rect x="340" y="0" width="860" height="630" rx="0"/>
+    </clipPath>
+  </defs>
+  <rect width="1200" height="630" fill="url(#background)"/>
+  <image href="../images/camera-m200-742.webp" x="340" y="0" width="860" height="630" preserveAspectRatio="xMidYMid meet" clip-path="url(#product)"/>
+  <path d="M0 0h438v630H0z" fill="url(#background)"/>
+  <path d="M350 0h150v630H350z" fill="url(#blend)"/>
+  <rect x="54" y="78" width="68" height="6" rx="3" fill="#b7e34a"/>
+  <text x="54" y="125" fill="#dce9f7" font-family="Arial, sans-serif" font-size="20" font-weight="700" letter-spacing="2">RECOMENDACIÓN GVS</text>
+  <text x="54" y="226" fill="#ffffff" font-family="Arial, sans-serif" font-size="58" font-weight="700">CÁMARA</text>
+  <text x="54" y="292" fill="#ffffff" font-family="Arial, sans-serif" font-size="58" font-weight="700">PARA AUTO</text>
+  <text x="54" y="375" fill="#b7e34a" font-family="Arial, sans-serif" font-size="68" font-weight="700">M200</text>
+  <text x="54" y="438" fill="#ffffff" font-family="Arial, sans-serif" font-size="24" font-weight="600">Full HD · Wi-Fi · App móvil</text>
+  <text x="54" y="477" fill="#ffffff" font-family="Arial, sans-serif" font-size="22">Grabación en bucle</text>
+  <rect x="54" y="526" width="260" height="56" rx="12" fill="#b7e34a"/>
+  <text x="184" y="562" fill="#102b49" font-family="Arial, sans-serif" font-size="20" font-weight="700" text-anchor="middle">CONOCE LA CÁMARA</text>
+</svg>
